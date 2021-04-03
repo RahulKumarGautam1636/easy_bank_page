@@ -1,0 +1,409 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+.page_one {
+  /* height: 200rem; */
+  overflow: hidden;
+}
+.navbar_container {
+  width: 100%;
+  position: absolute;
+  height: 6.5rem;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  z-index: 3;
+}
+.navlinks {
+  display: flex;
+  min-width: clamp(30rem, 35%, 40%);
+  display: inherit;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.invite_button {
+  height: 3.8rem;
+  width: 15rem;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: white;
+}
+.open_menu {
+  display: none;
+}
+.close_menu {
+  display: none;
+}
+.page_one_container {
+  height: 78rem;
+  /* border: 1px solid black; */
+  display: flex;
+}
+/* .page_one_container * {border: 1px solid red} */
+.heading_image {
+  height: 100%;
+  width: 58%;
+  background-image: url(images/bg-intro-desktop.svg);
+  background-size: 150% 145%;
+  background-position: right 100% top 65%;
+  background-repeat: no-repeat;
+}
+.heading_container {
+  height: 100%;
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 50rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+}
+#head {
+  font-size: 5.2rem;
+  width: 45rem;
+  font-weight: lighter;
+  color: hsl(233, 26%, 24%);
+  font-family: 'Public Sans', sans-serif;
+}
+#info {
+  color: hsl(233, 8%, 62%);
+  line-height: 2.7rem;
+  font-size: 1.7rem;
+  word-spacing: 1px;
+  margin: 3rem 0 4rem 0;
+
+}
+#mockups {
+  margin-top: -7em;
+  margin-left: 22em;
+  width: clamp(550px, 91%, 91%);
+  height: auto;
+}
+.choose_easyBank {
+  padding-top: 3rem;
+  height: 20rem;
+  background: hsl(220, 16%, 96%);
+  padding-left: 13rem;
+}
+.easybank {
+  font-size: 3rem;
+  color: hsl(233, 26%, 24%);
+}
+.easybank_line {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  width: 65rem;
+  color: hsl(233, 8%, 62%);
+  line-height: 2.7rem;
+}
+/* --------------------------------------------page_two----------------------- */
+.page_two {
+  height: 90rem;
+  /* background: cyan; */
+  /* padding: 0 5rem 0 10rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards_outer_container {
+  background: hsl(220, 16%, 96%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+/* .page_two * {border: 1px solid black;} */
+.cards_container {
+  height: 100%;
+  width: 83%;
+  /* background: red; */
+  display: flex;
+}
+.card {
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: left;
+}
+.card p {
+  font-size: 1.8rem;
+  color: hsl(233, 8%, 62%);
+  line-height: 2.7rem;
+}
+.card h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: hsl(233, 26%, 24%);
+}
+.card img {
+  width: 80px;
+}
+.image_articles_container {
+  height: 50%;
+  display: flex;
+  width: 83%;
+}
+.article {
+  height: 95%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: left;
+}
+.article_internal_container {
+  height: 50%;
+  padding: 1.5rem;
+  /* border: 1px solid black; */
+}
+.image_container {
+  height: 50%;
+}
+.image_container img {
+  height: 100%;
+  width: 100%;
+}
+.article h3 {
+  font-weight: normal;
+  color: hsl(233, 8%, 62%);
+}
+.article p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: hsl(233, 8%, 62%);
+
+}
+.article h2 {
+  font-weight: normal;
+  font-size: 1.9rem;
+  color: hsl(233, 26%, 24%);
+  margin: 1rem 0 1rem 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+  .invite_button_container {
+    display: none;
+  }
+  .logo_container {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .open_menu {
+    display: flex;
+  }
+  .menu_icon_hide {
+    display: none;
+  }
+  .menu_icon_show {
+    display: flex;
+  }
+  .navbar_container {
+    flex-direction: column;
+  }
+  .navlinks {
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    background: red;
+    opacity: 0;
+    min-width: 90%;
+    height: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    transform: translateY(23rem);
+    transition: 0.5s ease-in-out;
+  }
+  .nav_animation {
+    height: 35rem;
+    opacity: 1;
+  }
+  /* ---------------------------------------------page_one-------------------- */
+  .page_one {
+    /* height: 200rem; */
+  }
+  .page_one_container {
+    height: 100rem;
+    flex-direction: column;
+  }
+  .heading_container {
+    padding: 5rem;
+    order: 2;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #info {
+    font-size: 1.9rem;
+  }
+
+  .heading_image {
+    order: 1;
+    width: 100%;
+    background-position: left;
+    background-size: 180% 150%;
+    background-position: right 72% top 90%;
+  }
+  #mockups {
+    margin-left: 0;
+    margin-top: -22rem;
+    width: 100%;
+    height: auto;
+  }
+  .page_one {
+    height: 165rem;
+    /* height: ; */
+  }
+  .intro {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    width: 90%;
+  }
+  .choose_easyBank {
+    width: 100%;
+    min-height: 35rem;
+    text-align: center;
+    padding: 4rem 5rem 0 5rem;
+  }
+  .easybank {
+    width: 30rem;
+    margin: auto;
+    font-size: 4.5rem;
+  }
+  .easybank_line {
+    margin-top: 3rem;
+    font-size: 1.9rem;
+    width: auto;
+  }
+/* --------------------------------------------------------page two------------- */
+  .page_two {
+    height: 360rem;
+  }
+  .cards_container {
+    /* background: red; */
+    /* margin-top: 40rem; */
+    flex-direction: column;
+  }
+  .card  {
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 35rem;
+    text-align: center;
+  }
+  .card img {
+    margin: auto;
+  }
+  .card h2 {
+    margin-bottom: 3rem;
+  }
+  .image_articles_container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* background: red; */
+  }
+  .article {
+    width: 100%;
+    /* width: clamp(400px, 100%, 100%); */
+    width: clamp(100%, 400px);
+    border: 1px solid black;
+  }
+  .article_internal_container {
+    padding: 2.5rem;
+  }
+  .article_internal_container h3 {
+    font-size: 1.4rem;
+  }
+  .article_internal_container h2 {
+    font-size: 2.5rem;
+  }
+  .article_internal_container p {
+    font-size: 1.7rem;
+  }
+  .image_container {
+    border: 1px solid black;
+  }
+  .image_container img {
+    /* height: auto;
+    width: 100%; */
+    object-fit: cover;
+    /* width: clamp(100%, 100%, 500px); */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+  .page_one {
+    /* height: 50rem; */
+  }
+  #mockups {
+    margin-top: -7rem;
+}
+}
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 52%;
+  }
+  .page_one {
+    /* height: 165rem; */
+  }
+  #mockups {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+}
