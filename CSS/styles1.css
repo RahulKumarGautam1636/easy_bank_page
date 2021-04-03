@@ -345,7 +345,6 @@ body {
     width: 100%;
     /* width: clamp(400px, 100%, 100%); */
     width: clamp(100%, 400px);
-    border: 1px solid black;
   }
   .article_internal_container {
     padding: 2.5rem;
@@ -358,9 +357,6 @@ body {
   }
   .article_internal_container p {
     font-size: 1.7rem;
-  }
-  .image_container {
-    border: 1px solid black;
   }
   .image_container img {
     /* height: auto;
