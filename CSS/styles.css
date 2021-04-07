@@ -301,11 +301,13 @@ body {
     flex-direction: column;
     transform: translateY(25rem);
     transition: 0.5s ease-in-out;
+    pointer-events: none;
   }
   .nav_animation {
     height: 39rem;
     opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    pointer-events: all;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 180px 500px -10px;
   }
   /* ---------------------------------------------page_one-------------------- */
   .page_one_container {
