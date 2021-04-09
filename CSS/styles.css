@@ -307,6 +307,7 @@ body {
     height: 39rem;
     opacity: 1;
     pointer-events: all;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 180px 500px -10px;
   }
   /* ---------------------------------------------page_one-------------------- */
   .page_one_container {
@@ -347,6 +348,7 @@ body {
     align-items: center;
     margin: 0;
     width: 90%;
+    max-width: 400px;
     height: 100%;
   }
   .choose_easyBank {
@@ -354,6 +356,11 @@ body {
     min-height: 35rem;
     text-align: center;
     padding: 4rem 5rem 0 5rem;
+  }
+  .inner_container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
   }
   .easybank {
     width: 30rem;
@@ -374,6 +381,7 @@ body {
   }
   .cards_container {
     flex-direction: column;
+    max-width: 400px;
   }
   .card  {
     width: 100%;
@@ -394,12 +402,13 @@ body {
   }
   .image_articles_container {
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: auto;
   }
   .article {
     width: 100%;
-    width: clamp(100%, 400px);
+    max-width: 400px;
   }
   .article_internal_container {
     padding: 2.5rem;
